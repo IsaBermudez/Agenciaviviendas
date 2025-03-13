@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dcf7d4d919af42b3b8af2d4469428e72" Name="Diagram1">
+        <EntityTypeShape EntityType="DBAgencia_viviendasModel.AGEncia" Width="1.5" PointX="2.125" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBAgencia_viviendasModel.CLIente" Width="1.5" PointX="3.625" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBAgencia_viviendasModel.TIPoVivienda" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBAgencia_viviendasModel.VENta" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBAgencia_viviendasModel.VIVienda" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DBAgencia_viviendasModel.FKAgencia_Venta" ManuallyRouted="false" />
+        <AssociationConnector Association="DBAgencia_viviendasModel.FKCliente_Venta" ManuallyRouted="false" />
+        <AssociationConnector Association="DBAgencia_viviendasModel.FKTipoVivienda_Vivienda" ManuallyRouted="false" />
+        <AssociationConnector Association="DBAgencia_viviendasModel.FKVivienda_Venta" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

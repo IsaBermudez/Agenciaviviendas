@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBAgencia_viviendasModelStoreContainer" CdmEntityContainer="DBAgencia_viviendasEntities">
+    <EntitySetMapping Name="AGEncias">
+      <EntityTypeMapping TypeName="DBAgencia_viviendasModel.AGEncia">
+        <MappingFragment StoreEntitySet="AGEncia">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIentes">
+      <EntityTypeMapping TypeName="DBAgencia_viviendasModel.CLIente">
+        <MappingFragment StoreEntitySet="CLIente">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="PrimerApellido" ColumnName="PrimerApellido" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPoViviendas">
+      <EntityTypeMapping TypeName="DBAgencia_viviendasModel.TIPoVivienda">
+        <MappingFragment StoreEntitySet="TIPoVivienda">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VENtas">
+      <EntityTypeMapping TypeName="DBAgencia_viviendasModel.VENta">
+        <MappingFragment StoreEntitySet="VENta">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="ViviendaId" ColumnName="ViviendaId" />
+          <ScalarProperty Name="AgenciaId" ColumnName="AgenciaId" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIViendas">
+      <EntityTypeMapping TypeName="DBAgencia_viviendasModel.VIVienda">
+        <MappingFragment StoreEntitySet="VIVienda">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumCuartos" ColumnName="NumCuartos" />
+          <ScalarProperty Name="NumBaños" ColumnName="NumBaños" />
+          <ScalarProperty Name="Tamaño" ColumnName="Tamaño" />
+          <ScalarProperty Name="NumPisos" ColumnName="NumPisos" />
+          <ScalarProperty Name="Accesorios" ColumnName="Accesorios" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="TipoViviendaId" ColumnName="TipoViviendaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
